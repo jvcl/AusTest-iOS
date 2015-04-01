@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF721B321ACAE222001F48E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B311ACAE222001F48E9 /* AppDelegate.swift */; };
+		CF721B341ACAE222001F48E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B331ACAE222001F48E9 /* ViewController.swift */; };
+		CF721B371ACAE222001F48E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF721B351ACAE222001F48E9 /* Main.storyboard */; };
+		CF721B391ACAE222001F48E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF721B381ACAE222001F48E9 /* Images.xcassets */; };
+		CF721B3C1ACAE222001F48E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF721B3A1ACAE222001F48E9 /* LaunchScreen.xib */; };
+		CF721B481ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B471ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift */; };
+		CF721B521ACAE3F7001F48E9 /* QuestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B511ACAE3F6001F48E9 /* QuestionsController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF721B421ACAE222001F48E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF721B241ACAE222001F48E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF721B2B1ACAE222001F48E9;
+			remoteInfo = AustralianCitizenshipTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF721B2C1ACAE222001F48E9 /* AustralianCitizenshipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustralianCitizenshipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF721B301ACAE222001F48E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF721B311ACAE222001F48E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF721B331ACAE222001F48E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF721B361ACAE222001F48E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF721B381ACAE222001F48E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF721B3B1ACAE222001F48E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CF721B411ACAE222001F48E9 /* AustralianCitizenshipTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AustralianCitizenshipTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF721B461ACAE222001F48E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF721B471ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustralianCitizenshipTestTests.swift; sourceTree = "<group>"; };
+		CF721B511ACAE3F6001F48E9 /* QuestionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF721B291ACAE222001F48E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF721B3E1ACAE222001F48E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF721B231ACAE222001F48E9 = {
+			isa = PBXGroup;
+			children = (
+				CF721B2E1ACAE222001F48E9 /* AustralianCitizenshipTest */,
+				CF721B441ACAE222001F48E9 /* AustralianCitizenshipTestTests */,
+				CF721B2D1ACAE222001F48E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF721B2D1ACAE222001F48E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF721B2C1ACAE222001F48E9 /* AustralianCitizenshipTest.app */,
+				CF721B411ACAE222001F48E9 /* AustralianCitizenshipTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF721B2E1ACAE222001F48E9 /* AustralianCitizenshipTest */ = {
+			isa = PBXGroup;
+			children = (
+				CF721B311ACAE222001F48E9 /* AppDelegate.swift */,
+				CF721B511ACAE3F6001F48E9 /* QuestionsController.swift */,
+				CF721B331ACAE222001F48E9 /* ViewController.swift */,
+				CF721B351ACAE222001F48E9 /* Main.storyboard */,
+				CF721B381ACAE222001F48E9 /* Images.xcassets */,
+				CF721B3A1ACAE222001F48E9 /* LaunchScreen.xib */,
+				CF721B2F1ACAE222001F48E9 /* Supporting Files */,
+			);
+			path = AustralianCitizenshipTest;
+			sourceTree = "<group>";
+		};
+		CF721B2F1ACAE222001F48E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF721B301ACAE222001F48E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF721B441ACAE222001F48E9 /* AustralianCitizenshipTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF721B471ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift */,
+				CF721B451ACAE222001F48E9 /* Supporting Files */,
+			);
+			path = AustralianCitizenshipTestTests;
+			sourceTree = "<group>";
+		};
+		CF721B451ACAE222001F48E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF721B461ACAE222001F48E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF721B2B1ACAE222001F48E9 /* AustralianCitizenshipTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF721B4B1ACAE222001F48E9 /* Build configuration list for PBXNativeTarget "AustralianCitizenshipTest" */;
+			buildPhases = (
+				CF721B281ACAE222001F48E9 /* Sources */,
+				CF721B291ACAE222001F48E9 /* Frameworks */,
+				CF721B2A1ACAE222001F48E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AustralianCitizenshipTest;
+			productName = AustralianCitizenshipTest;
+			productReference = CF721B2C1ACAE222001F48E9 /* AustralianCitizenshipTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF721B401ACAE222001F48E9 /* AustralianCitizenshipTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF721B4E1ACAE222001F48E9 /* Build configuration list for PBXNativeTarget "AustralianCitizenshipTestTests" */;
+			buildPhases = (
+				CF721B3D1ACAE222001F48E9 /* Sources */,
+				CF721B3E1ACAE222001F48E9 /* Frameworks */,
+				CF721B3F1ACAE222001F48E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF721B431ACAE222001F48E9 /* PBXTargetDependency */,
+			);
+			name = AustralianCitizenshipTestTests;
+			productName = AustralianCitizenshipTestTests;
+			productReference = CF721B411ACAE222001F48E9 /* AustralianCitizenshipTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF721B241ACAE222001F48E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Innovus;
+				TargetAttributes = {
+					CF721B2B1ACAE222001F48E9 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					CF721B401ACAE222001F48E9 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = CF721B2B1ACAE222001F48E9;
+					};
+				};
+			};
+			buildConfigurationList = CF721B271ACAE222001F48E9 /* Build configuration list for PBXProject "AustralianCitizenshipTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF721B231ACAE222001F48E9;
+			productRefGroup = CF721B2D1ACAE222001F48E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF721B2B1ACAE222001F48E9 /* AustralianCitizenshipTest */,
+				CF721B401ACAE222001F48E9 /* AustralianCitizenshipTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF721B2A1ACAE222001F48E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF721B371ACAE222001F48E9 /* Main.storyboard in Resources */,
+				CF721B3C1ACAE222001F48E9 /* LaunchScreen.xib in Resources */,
+				CF721B391ACAE222001F48E9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF721B3F1ACAE222001F48E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF721B281ACAE222001F48E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF721B341ACAE222001F48E9 /* ViewController.swift in Sources */,
+				CF721B521ACAE3F7001F48E9 /* QuestionsController.swift in Sources */,
+				CF721B321ACAE222001F48E9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF721B3D1ACAE222001F48E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF721B481ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF721B431ACAE222001F48E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF721B2B1ACAE222001F48E9 /* AustralianCitizenshipTest */;
+			targetProxy = CF721B421ACAE222001F48E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF721B351ACAE222001F48E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF721B361ACAE222001F48E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF721B3A1ACAE222001F48E9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF721B3B1ACAE222001F48E9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF721B491ACAE222001F48E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF721B4A1ACAE222001F48E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF721B4C1ACAE222001F48E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AustralianCitizenshipTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF721B4D1ACAE222001F48E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AustralianCitizenshipTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF721B4F1ACAE222001F48E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AustralianCitizenshipTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AustralianCitizenshipTest.app/AustralianCitizenshipTest";
+			};
+			name = Debug;
+		};
+		CF721B501ACAE222001F48E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AustralianCitizenshipTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AustralianCitizenshipTest.app/AustralianCitizenshipTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF721B271ACAE222001F48E9 /* Build configuration list for PBXProject "AustralianCitizenshipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF721B491ACAE222001F48E9 /* Debug */,
+				CF721B4A1ACAE222001F48E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF721B4B1ACAE222001F48E9 /* Build configuration list for PBXNativeTarget "AustralianCitizenshipTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF721B4C1ACAE222001F48E9 /* Debug */,
+				CF721B4D1ACAE222001F48E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF721B4E1ACAE222001F48E9 /* Build configuration list for PBXNativeTarget "AustralianCitizenshipTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF721B4F1ACAE222001F48E9 /* Debug */,
+				CF721B501ACAE222001F48E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF721B241ACAE222001F48E9 /* Project object */;
+}
