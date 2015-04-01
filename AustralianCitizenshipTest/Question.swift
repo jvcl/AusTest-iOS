@@ -14,6 +14,8 @@ class Question {
     var answer2: String
     var answer3: String
     var choosen: Int = -1
+    var rightAnswer: Int?
+    
     
     init(question: String, answer1: String, answer2: String, answer3: String) {
         self.question = question
@@ -21,5 +23,4 @@ class Question {
         self.answer2 = answer2
         self.answer3 = answer3
     }
-    
 }

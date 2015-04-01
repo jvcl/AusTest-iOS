@@ -15,6 +15,8 @@ class QuestionsController: UIViewController {
     let a2Gesture = UITapGestureRecognizer();
     let a3Gesture = UITapGestureRecognizer();
     
+    @IBOutlet weak var buttonNext: UIBarButtonItem!
+    @IBOutlet weak var buttonPrev: UIBarButtonItem!
     @IBOutlet weak var label_question: UILabel!
     @IBOutlet weak var a1: UILabel!
     @IBOutlet weak var a2: UILabel!
@@ -52,17 +54,54 @@ class QuestionsController: UIViewController {
     @IBAction func button_prev(sender: AnyObject) {
         if (num > 0) {
             num--
+            buttonNext.enabled = true
             
         }
+        if num == 0 {
+            buttonPrev.enabled = false
+        }
+        
         label.text = "Question \(num+1)"
         loadQuestion(num)
     }
     
+    @IBAction func button_finish(sender: AnyObject) {
+        println("finish")
+        
+        let alertController = UIAlertController(title: nil, message: "Finish?", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            // ...
+        }
+        alertController.addAction(cancelAction)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+            // ...
+            
+            
+            
+        }
+        alertController.addAction(OKAction)
+        
+        
+        
+        self.presentViewController(alertController, animated: true) {
+            // ...
+        }
+        
+    }
+   
     @IBAction func button_next(sender: AnyObject) {
         if (num < 19) {
             num++
+            buttonPrev.enabled = true
             
         }
+        if num == 19 {
+            buttonNext.enabled = false
+        }
+        
+        
         label.text = "Question \(num+1)"
         loadQuestion(num)
     }
