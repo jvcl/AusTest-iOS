@@ -19,6 +19,8 @@ class QuestionsController: UIViewController {
     @IBOutlet weak var a1: UILabel!
     @IBOutlet weak var a2: UILabel!
     @IBOutlet weak var a3: UILabel!
+    var questions: [Question] = []
+    
     
     var num = 0
     override func viewDidLoad() {
@@ -36,6 +38,11 @@ class QuestionsController: UIViewController {
         a3.addGestureRecognizer(a3Gesture)
         a3.userInteractionEnabled = true
         
+        getQuestions()
+        
+        label_question.text = questions[0].question
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -49,6 +56,7 @@ class QuestionsController: UIViewController {
             
         }
         label.text = "Question \(num+1)"
+        label_question.text = questions[num].question
     }
     
     @IBAction func button_next(sender: AnyObject) {
@@ -57,6 +65,14 @@ class QuestionsController: UIViewController {
             
         }
         label.text = "Question \(num+1)"
+        label_question.text = questions[num].question
+    }
+    
+    func getQuestions(){
+        for var index = 0; index < 20; ++index {
+            var q = Question(question: "Hola \(index)", answer1: "", answer2: "", answer3: "")
+            questions.append(q)
+        }
     }
     
     func tappedView1 (){
@@ -77,7 +93,6 @@ class QuestionsController: UIViewController {
     func changeLabelColor(label: UILabel){
         
         label.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 1.0)
-        
     }
 }
 

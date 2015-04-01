@@ -14,6 +14,7 @@
 		CF721B3C1ACAE222001F48E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF721B3A1ACAE222001F48E9 /* LaunchScreen.xib */; };
 		CF721B481ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B471ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift */; };
 		CF721B521ACAE3F7001F48E9 /* QuestionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B511ACAE3F6001F48E9 /* QuestionsController.swift */; };
+		CFF01EE81ACC0BAA001B2352 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF01EE71ACC0BAA001B2352 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		CF721B461ACAE222001F48E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF721B471ACAE222001F48E9 /* AustralianCitizenshipTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustralianCitizenshipTestTests.swift; sourceTree = "<group>"; };
 		CF721B511ACAE3F6001F48E9 /* QuestionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionsController.swift; sourceTree = "<group>"; };
+		CFF01EE71ACC0BAA001B2352 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		CF721B2E1ACAE222001F48E9 /* AustralianCitizenshipTest */ = {
 			isa = PBXGroup;
 			children = (
+				CFF01EE71ACC0BAA001B2352 /* Question.swift */,
 				CF721B311ACAE222001F48E9 /* AppDelegate.swift */,
 				CF721B511ACAE3F6001F48E9 /* QuestionsController.swift */,
 				CF721B331ACAE222001F48E9 /* ViewController.swift */,
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF721B341ACAE222001F48E9 /* ViewController.swift in Sources */,
+				CFF01EE81ACC0BAA001B2352 /* Question.swift in Sources */,
 				CF721B521ACAE3F7001F48E9 /* QuestionsController.swift in Sources */,
 				CF721B321ACAE222001F48E9 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				CF721B4D1ACAE222001F48E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF721B4E1ACAE222001F48E9 /* Build configuration list for PBXNativeTarget "AustralianCitizenshipTestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				CF721B501ACAE222001F48E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
