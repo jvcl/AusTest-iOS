@@ -11,7 +11,9 @@ import UIKit
 class QuestionsController: UIViewController {
     
     @IBOutlet weak var label: UILabel!
-    let tapRec = UITapGestureRecognizer();
+    let a1Gesture = UITapGestureRecognizer();
+    let a2Gesture = UITapGestureRecognizer();
+    let a3Gesture = UITapGestureRecognizer();
     
     @IBOutlet weak var label_question: UILabel!
     @IBOutlet weak var a1: UILabel!
@@ -22,9 +24,17 @@ class QuestionsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        tapRec.addTarget(self, action: "tappedView")
-        a1.addGestureRecognizer(tapRec)
+        a1Gesture.addTarget(self, action: "tappedView1")
+        a2Gesture.addTarget(self, action: "tappedView2")
+        a3Gesture.addTarget(self, action: "tappedView3")
+        
+        a1.addGestureRecognizer(a1Gesture)
         a1.userInteractionEnabled = true
+        
+        a2.addGestureRecognizer(a2Gesture)
+        a2.userInteractionEnabled = true
+        a3.addGestureRecognizer(a3Gesture)
+        a3.userInteractionEnabled = true
         
     }
     
@@ -49,14 +59,25 @@ class QuestionsController: UIViewController {
         label.text = "Question \(num+1)"
     }
     
-    func tappedView (){
+    func tappedView1 (){
         println("Touch")
         label.text = "Done"
-        a1.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 1.0)
+        changeLabelColor(a1)
         
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.apple.com/")!)
+        //UIApplication.sharedApplication().openURL(NSURL(string: "http://www.apple.com/")!)
     }
     
-       
+    func tappedView2 (){
+        changeLabelColor(a2)
+    }
+    func tappedView3 (){
+        changeLabelColor(a3)
+    }
+    
+    func changeLabelColor(label: UILabel){
+        
+        label.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 1.0)
+        
+    }
 }
 
