@@ -39,8 +39,7 @@ class QuestionsController: UIViewController {
         a3.userInteractionEnabled = true
         
         getQuestions()
-        
-        label_question.text = questions[0].question
+        loadQuestion(0)
         
         
     }
@@ -56,7 +55,7 @@ class QuestionsController: UIViewController {
             
         }
         label.text = "Question \(num+1)"
-        label_question.text = questions[num].question
+        loadQuestion(num)
     }
     
     @IBAction func button_next(sender: AnyObject) {
@@ -65,12 +64,12 @@ class QuestionsController: UIViewController {
             
         }
         label.text = "Question \(num+1)"
-        label_question.text = questions[num].question
+        loadQuestion(num)
     }
     
     func getQuestions(){
         for var index = 0; index < 20; ++index {
-            var q = Question(question: "Hola \(index)", answer1: "", answer2: "", answer3: "")
+            var q = Question(question: "Hola \(index)", answer1: "a1 \(index)", answer2: "a2 \(index)", answer3: "a3 \(index)")
             questions.append(q)
         }
     }
@@ -81,6 +80,27 @@ class QuestionsController: UIViewController {
         changeLabelColor(a1)
         
         //UIApplication.sharedApplication().openURL(NSURL(string: "http://www.apple.com/")!)
+    }
+    
+    func loadQuestion(index: Int) {
+        
+        label_question.text = questions[index].question
+        a1.text = questions[index].answer1
+        a2.text = questions[index].answer2
+        a3.text = questions[index].answer3
+        var tempLabel: UILabel?
+        if questions[index].choosen > -1 {
+            if questions[index].choosen == 0{
+                tempLabel = a1
+            }
+            if questions[index].choosen == 1{
+                tempLabel = a2
+            }
+            if questions[index].choosen == 2{
+                tempLabel = a3
+            }
+            changeLabelColor(tempLabel!)
+        }
     }
     
     func tappedView2 (){
