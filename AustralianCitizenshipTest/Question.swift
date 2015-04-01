@@ -13,7 +13,7 @@ class Question {
     var answer1: String
     var answer2: String
     var answer3: String
-    var choosen = -1
+    var choosen: Int = -1
     
     init(question: String, answer1: String, answer2: String, answer3: String) {
         self.question = question

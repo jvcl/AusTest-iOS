@@ -75,14 +75,15 @@ class QuestionsController: UIViewController {
     }
     
     func tappedView1 (){
-        println("Touch")
-        label.text = "Done"
+        questions[num].choosen = 0
         changeLabelColor(a1)
         
         //UIApplication.sharedApplication().openURL(NSURL(string: "http://www.apple.com/")!)
     }
     
     func loadQuestion(index: Int) {
+        
+        resetLabels()
         
         label_question.text = questions[index].question
         a1.text = questions[index].answer1
@@ -104,14 +105,21 @@ class QuestionsController: UIViewController {
     }
     
     func tappedView2 (){
+        questions[num].choosen = 1
         changeLabelColor(a2)
     }
     func tappedView3 (){
+        questions[num].choosen = 2
         changeLabelColor(a3)
+    }
+    func resetLabels(){
+        a1.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 0)
+        a2.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 0)
+        a3.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 0)
     }
     
     func changeLabelColor(label: UILabel){
-        
+        resetLabels()
         label.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 1.0)
     }
 }
