@@ -78,6 +78,7 @@ class QuestionsController: UIViewController {
         let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
             // ...
             
+            self.calculateScore()
             
             
         }
@@ -160,6 +161,9 @@ class QuestionsController: UIViewController {
     func changeLabelColor(label: UILabel){
         resetLabels()
         label.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 1.0)
+    }
+    
+    func calculateScore(){
     }
 }
 
