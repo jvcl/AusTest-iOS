@@ -164,6 +164,16 @@ class QuestionsController: UIViewController {
     }
     
     func calculateScore(){
+        println("Calculate")
+        
+        var score = 0
+        
+        for q in questions{
+            if q.choosen != -1 && q.rightAnswer == q.choosen {
+                score++
+            }
+        }
+        println("Score \(score)")
     }
 }
 
