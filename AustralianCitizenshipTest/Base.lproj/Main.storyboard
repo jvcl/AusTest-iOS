@@ -168,6 +168,7 @@
                         <outlet property="a3" destination="E5m-bZ-Cb4" id="tCn-7u-lHi"/>
                         <outlet property="buttonNext" destination="zB2-j0-arO" id="clf-Kq-MhR"/>
                         <outlet property="buttonPrev" destination="9kP-C3-Lkm" id="An5-hj-BC7"/>
+                        <outlet property="finishButton" destination="HqH-aH-Ncz" id="8yt-gs-BGu"/>
                         <outlet property="label" destination="Ux0-Yv-Qw9" id="SiK-1W-I6h"/>
                         <outlet property="label_question" destination="Gvq-2m-2nh" id="5cV-ZP-YR6"/>
                     </connections>

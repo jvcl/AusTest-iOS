@@ -17,11 +17,13 @@ class QuestionsController: UIViewController {
     
     @IBOutlet weak var buttonNext: UIBarButtonItem!
     @IBOutlet weak var buttonPrev: UIBarButtonItem!
+    @IBOutlet weak var finishButton: UIBarButtonItem!
     @IBOutlet weak var label_question: UILabel!
     @IBOutlet weak var a1: UILabel!
     @IBOutlet weak var a2: UILabel!
     @IBOutlet weak var a3: UILabel!
     var questions: [Question] = []
+    var finish = false
     
     
     var num = 0
@@ -92,6 +94,12 @@ class QuestionsController: UIViewController {
     
     func showScoreDialog(){
         println("calculate Score")
+        
+        finishButton.enabled = false
+        
+        
+        self.finish = true
+        
         let alertControllerScore = UIAlertController(title: "Score", message: "Score: \n?", preferredStyle: .Alert)
         let OKActionScore = UIAlertAction(title: "OK", style: .Default) { (action) in
             
