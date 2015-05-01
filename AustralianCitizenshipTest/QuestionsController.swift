@@ -68,15 +68,16 @@ class QuestionsController: UIViewController {
     @IBAction func button_finish(sender: AnyObject) {
         println("finish")
         
-        let alertController = UIAlertController(title: "Score", message: "Finish?", preferredStyle: .Alert)
+        let alertController = UIAlertController(title: nil, message: "Finish?", preferredStyle: .Alert)
         
-    
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+            // ...
+        }
+        alertController.addAction(cancelAction)
         
         let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
             // ...
-            
-            self.calculateScore()
-            
+            self.showScoreDialog()
             
         }
         alertController.addAction(OKAction)
@@ -87,6 +88,19 @@ class QuestionsController: UIViewController {
             // ...
         }
         
+    }
+    
+    func showScoreDialog(){
+        println("calculate Score")
+        let alertControllerScore = UIAlertController(title: "Score", message: "Score: \n?", preferredStyle: .Alert)
+        let OKActionScore = UIAlertAction(title: "OK", style: .Default) { (action) in
+            
+            //Update UI
+            println("Update UI")
+        }
+        
+        alertControllerScore.addAction(OKActionScore)
+        self.presentViewController(alertControllerScore, animated: true, completion: nil)
     }
    
     @IBAction func button_next(sender: AnyObject) {
