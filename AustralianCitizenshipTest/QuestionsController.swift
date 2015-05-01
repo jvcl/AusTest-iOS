@@ -68,12 +68,9 @@ class QuestionsController: UIViewController {
     @IBAction func button_finish(sender: AnyObject) {
         println("finish")
         
-        let alertController = UIAlertController(title: nil, message: "Finish?", preferredStyle: .Alert)
+        let alertController = UIAlertController(title: "Score", message: "Finish?", preferredStyle: .Alert)
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-            // ...
-        }
-        alertController.addAction(cancelAction)
+    
         
         let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
             // ...
