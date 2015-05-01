@@ -22,5 +22,6 @@ class Question {
         self.answer1 = answer1
         self.answer2 = answer2
         self.answer3 = answer3
+        self.rightAnswer = 1
     }
 }

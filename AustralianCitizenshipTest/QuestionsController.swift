@@ -44,8 +44,6 @@ class QuestionsController: UIViewController {
         
         getQuestions()
         loadQuestion(0)
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -96,7 +94,9 @@ class QuestionsController: UIViewController {
         println("calculate Score")
         
         finishButton.enabled = false
-        
+        a1.removeGestureRecognizer(a1Gesture)
+        a2.removeGestureRecognizer(a2Gesture)
+        a3.removeGestureRecognizer(a3Gesture)
         
         self.finish = true
         
@@ -143,7 +143,6 @@ class QuestionsController: UIViewController {
     func loadQuestion(index: Int) {
         
         resetLabels()
-        
         label_question.text = questions[index].question
         a1.text = questions[index].answer1
         a2.text = questions[index].answer2
@@ -161,6 +160,19 @@ class QuestionsController: UIViewController {
             }
             changeLabelColor(tempLabel!)
         }
+        
+        if finish {
+            if ((questions[index].choosen == -1) || (questions[index].choosen != questions[index].rightAnswer))  {
+                println("wrong")
+            
+            }else{
+            
+            println("right")
+            
+            }
+        
+        }
+        
     }
     
     func tappedView2 (){
