@@ -194,9 +194,9 @@ class QuestionsController: UIViewController {
         changeLabelColor(a3)
     }
     func resetLabels(){
-        a1.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 0)
-        a2.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 0)
-        a3.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 0)
+        a1.backgroundColor = UIColor(red: 238/255.0, green: 238/255.0, blue: 238/255.0, alpha: 1)
+        a2.backgroundColor = UIColor(red: 238/255.0, green: 238/255.0, blue: 238/255.0, alpha: 1)
+        a3.backgroundColor = UIColor(red: 238/255.0, green: 238/255.0, blue: 238/255.0, alpha: 1)
     }
     
     func changeLabelColor(label: UILabel){
@@ -216,5 +216,6 @@ class QuestionsController: UIViewController {
         }
         println("Score \(score)")
     }
+
 }
 
