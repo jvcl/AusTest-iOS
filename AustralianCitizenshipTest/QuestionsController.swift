@@ -109,6 +109,7 @@ class QuestionsController: UIViewController {
         
         alertControllerScore.addAction(OKActionScore)
         self.presentViewController(alertControllerScore, animated: true, completion: nil)
+        
     }
    
     @IBAction func button_next(sender: AnyObject) {
