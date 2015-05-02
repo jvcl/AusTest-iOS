@@ -29,6 +29,8 @@ class QuestionsController: UIViewController {
     var num = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        readFile()
         // Do any additional setup after loading the view, typically from a nib.
         a1Gesture.addTarget(self, action: "tappedView1")
         a2Gesture.addTarget(self, action: "tappedView2")
@@ -201,7 +203,7 @@ class QuestionsController: UIViewController {
     
     func changeLabelColor(label: UILabel){
         resetLabels()
-        label.backgroundColor = UIColor(red: 1, green: 128/255.0, blue: 0.5, alpha: 1.0)
+        label.backgroundColor = UIColor(red: 239/255.0, green: 154/255.0, blue: 154/255.0, alpha: 1.0)
     }
     
     func calculateScore(){
@@ -215,6 +217,13 @@ class QuestionsController: UIViewController {
             }
         }
         println("Score \(score)")
+    }
+    
+    func readFile(){
+        let path = NSBundle.mainBundle().pathForResource("questions", ofType: "txt")
+        var text = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)!
+        println(text)
+
     }
 
 }
