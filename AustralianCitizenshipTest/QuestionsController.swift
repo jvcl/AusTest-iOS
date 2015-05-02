@@ -101,8 +101,8 @@ class QuestionsController: UIViewController {
         a3.removeGestureRecognizer(a3Gesture)
         
         self.finish = true
-        
-        let alertControllerScore = UIAlertController(title: "Score", message: "Score: \n?", preferredStyle: .Alert)
+        var score = calculateScore()
+        let alertControllerScore = UIAlertController(title: "Score", message: "Score: \(score)", preferredStyle: .Alert)
         let OKActionScore = UIAlertAction(title: "OK", style: .Default) { (action) in
             
             //Update UI
@@ -130,8 +130,12 @@ class QuestionsController: UIViewController {
     }
     
     func getQuestions(){
+        
+        var questionsFromFile = readFile()
         for var index = 0; index < 20; ++index {
-            var q = Question(question: "Hola \(index)", answer1: "a1 \(index)", answer2: "a2 \(index)", answer3: "a3 \(index)")
+            println(index)
+            var question = questionsFromFile[index].componentsSeparatedByString("///")
+            var q = Question(question: question[0] as! String, answer1: question[1] as! String, answer2: question[2] as! String, answer3: question[3] as! String)
             questions.append(q)
         }
     }
@@ -206,7 +210,7 @@ class QuestionsController: UIViewController {
         label.backgroundColor = UIColor(red: 239/255.0, green: 154/255.0, blue: 154/255.0, alpha: 1.0)
     }
     
-    func calculateScore(){
+    func calculateScore() -> Int{
         println("Calculate")
         
         var score = 0
@@ -217,14 +221,26 @@ class QuestionsController: UIViewController {
             }
         }
         println("Score \(score)")
+        return score
     }
     
-    func readFile(){
+    func readFile()->[NSString]{
         let path = NSBundle.mainBundle().pathForResource("questions", ofType: "txt")
         var text = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)!
-        println(text)
-
+        var h = text.componentsSeparatedByString("\n")
+        h.removeLast()
+        return shuffle(h)
+        
+       // println(text)
     }
-
+    
+    func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
+        let c = count(list)
+        for i in 0..<(c - 1) {
+            let j = Int(arc4random_uniform(UInt32(c - i))) + i
+            swap(&list[i], &list[j])
+        }
+        return list
+    }
 }
 

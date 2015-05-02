@@ -5,6 +5,7 @@ build
 *.mode1v3
 *~
 *~.nib
-*~.xib 
-.DS_Store 
+*~.xib
+.DS_Store
 xcuserdata/
+AustralianCitizenshipTest/questions.txt
