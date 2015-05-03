@@ -10,8 +10,8 @@ import UIKit
 
 class AboutTheTestViewController: UIViewController {
     
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
-        
     }
 }
