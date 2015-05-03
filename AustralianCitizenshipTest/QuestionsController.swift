@@ -151,9 +151,9 @@ class QuestionsController: UIViewController {
         
         resetLabels()
         label_question.text = questions[index].question
-        a1.text = "a) " + questions[index].answer1
-        a2.text = "b) " + questions[index].answer2
-        a3.text = "c) " + questions[index].answer3
+        a1.text = questions[index].answer1
+        a2.text = questions[index].answer2
+        a3.text = questions[index].answer3
         
         var tempLabel: UILabel?
         if questions[index].choosen > -1 {
