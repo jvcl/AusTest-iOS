@@ -15,6 +15,8 @@ class QuestionsController: UIViewController {
     let a2Gesture = UITapGestureRecognizer();
     let a3Gesture = UITapGestureRecognizer();
     
+    @IBOutlet weak var wrongImage: UIImageView!
+    @IBOutlet weak var rightImage: UIImageView!
     @IBOutlet weak var buttonNext: UIBarButtonItem!
     @IBOutlet weak var buttonPrev: UIBarButtonItem!
     @IBOutlet weak var finishButton: UIBarButtonItem!
@@ -172,6 +174,9 @@ class QuestionsController: UIViewController {
         if finish {
             if ((questions[index].choosen == -1) || (questions[index].choosen != questions[index].rightAnswer))  {
                 println("wrong")
+                rightImage.hidden = true
+                wrongImage.hidden = false
+
                 
                 if questions[index].rightAnswer == 0 {
                     a1.backgroundColor = UIColor(red: 0, green: 1, blue: 0, alpha: 0.3)
@@ -186,7 +191,8 @@ class QuestionsController: UIViewController {
             }else{
             
             println("right")
-            
+                rightImage.hidden = false
+                wrongImage.hidden = true
             }
         }
     }

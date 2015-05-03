@@ -100,13 +100,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question 1" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux0-Yv-Qw9">
-                                <rect key="frame" x="258" y="72" width="84" height="21"/>
+                                <rect key="frame" x="258" y="72" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-bZ-Cb4" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
-                                <rect key="frame" x="16" y="235" width="568" height="30"/>
+                                <rect key="frame" x="16" y="232" width="568" height="22"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.050000000000000017" y="0.0" width="1" height="1"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -114,7 +114,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Da7-YD-Ix3">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
                                 <items>
                                     <barButtonItem enabled="NO" title="Prev" id="9kP-C3-Lkm">
                                         <connections>
@@ -136,26 +136,32 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXs-ve-jLt" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
-                                <rect key="frame" x="16" y="197" width="568" height="30"/>
+                                <rect key="frame" x="16" y="192" width="568" height="22"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvq-2m-2nh" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
-                                <rect key="frame" x="16" y="103" width="568" height="30"/>
+                                <rect key="frame" x="16" y="111" width="568" height="23"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i97-PT-pOQ" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
-                                <rect key="frame" x="16" y="149" width="568" height="30"/>
+                                <rect key="frame" x="16" y="152" width="568" height="22"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="EBV-Lc-jNJ">
+                                <rect key="frame" x="268" y="264" width="64" height="50"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wrong" translatesAutoresizingMaskIntoConstraints="NO" id="Ien-V0-LnW">
+                                <rect key="frame" x="381" y="264" width="64" height="64"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.64313725490196083" green="0.85098039215686272" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -165,15 +171,19 @@
                             <constraint firstItem="Da7-YD-Ix3" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" constant="-16" id="ITr-m5-hKh"/>
                             <constraint firstItem="dXs-ve-jLt" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="NNd-gs-ESZ"/>
                             <constraint firstItem="i97-PT-pOQ" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="Pr3-wT-hPJ"/>
+                            <constraint firstAttribute="centerX" secondItem="Ien-V0-LnW" secondAttribute="centerX" id="RMu-4I-PfJ"/>
                             <constraint firstItem="E5m-bZ-Cb4" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="SDu-tD-Wdh"/>
                             <constraint firstItem="Gvq-2m-2nh" firstAttribute="top" secondItem="Ux0-Yv-Qw9" secondAttribute="bottom" constant="18" id="Tod-w9-R7L"/>
                             <constraint firstItem="Gvq-2m-2nh" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="aM1-hN-qHL"/>
                             <constraint firstItem="dXs-ve-jLt" firstAttribute="top" secondItem="i97-PT-pOQ" secondAttribute="bottom" constant="18" id="cCF-oN-6er"/>
                             <constraint firstItem="WFI-cx-Qhs" firstAttribute="top" secondItem="Da7-YD-Ix3" secondAttribute="bottom" id="goj-jR-5G8"/>
                             <constraint firstItem="Gvq-2m-2nh" firstAttribute="trailing" secondItem="2JH-qg-PsE" secondAttribute="trailingMargin" id="jt7-kr-ecf"/>
+                            <constraint firstItem="Ien-V0-LnW" firstAttribute="top" secondItem="E5m-bZ-Cb4" secondAttribute="bottom" constant="10" id="nNM-xN-ClO"/>
                             <constraint firstItem="E5m-bZ-Cb4" firstAttribute="trailing" secondItem="2JH-qg-PsE" secondAttribute="trailingMargin" id="nTm-Nm-CyN"/>
+                            <constraint firstAttribute="centerX" secondItem="EBV-Lc-jNJ" secondAttribute="centerX" id="tXX-JQ-Fba"/>
                             <constraint firstItem="i97-PT-pOQ" firstAttribute="top" secondItem="Gvq-2m-2nh" secondAttribute="bottom" constant="18" id="uIT-KE-brc"/>
                             <constraint firstItem="i97-PT-pOQ" firstAttribute="trailing" secondItem="2JH-qg-PsE" secondAttribute="trailingMargin" id="uTh-Hj-eHk"/>
+                            <constraint firstItem="EBV-Lc-jNJ" firstAttribute="top" secondItem="E5m-bZ-Cb4" secondAttribute="bottom" constant="10" id="vhN-a9-2l0"/>
                             <constraint firstAttribute="centerX" secondItem="Ux0-Yv-Qw9" secondAttribute="centerX" id="x8T-ew-tAv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Da7-YD-Ix3" secondAttribute="trailing" constant="-16" id="yva-8F-hc5"/>
                         </constraints>
@@ -189,6 +199,8 @@
                         <outlet property="finishButton" destination="HqH-aH-Ncz" id="8yt-gs-BGu"/>
                         <outlet property="label" destination="Ux0-Yv-Qw9" id="SiK-1W-I6h"/>
                         <outlet property="label_question" destination="Gvq-2m-2nh" id="5cV-ZP-YR6"/>
+                        <outlet property="rightImage" destination="EBV-Lc-jNJ" id="ClM-Iq-8vD"/>
+                        <outlet property="wrongImage" destination="Ien-V0-LnW" id="5sj-cC-Cwi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8g-Wc-0iG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -263,23 +275,8 @@ It is highly recommended that you read Australian Citizenship: Our Common Bond, 
 At the end of each test you will obtain a complete feedback about your answers.
  
 Download the book "Australian Citizenship: Our Common Bond" in the following link: 
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">http://www.citizenship.gov.au/learn/cit_test/test_resource/_pdf/our-common-bond-2014.pdf
+
+http://www.citizenship.gov.au/learn/cit_test/test_resource/_pdf/our-common-bond-2014.pdf
 </string>
                                         <attributes>
                                             <font key="NSFont" size="17" name="HelveticaNeue"/>
@@ -323,4 +320,8 @@ Cg
             <point key="canvasLocation" x="123" y="-372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="right" width="64" height="50"/>
+        <image name="wrong" width="64" height="64"/>
+    </resources>
 </document>
