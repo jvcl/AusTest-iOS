@@ -26,20 +26,31 @@
                                     <segue destination="lrt-nh-yGD" kind="show" id="XrI-uy-Hlg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfj-qA-BCN">
-                                <rect key="frame" x="277" y="323" width="100" height="30"/>
-                                <state key="normal" title="About the Test">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfj-qA-BCN">
+                                <rect key="frame" x="277" y="323" width="47" height="30"/>
+                                <state key="normal" title="Videos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="RVE-VS-9t7" kind="show" id="cbX-WI-WuJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ot-v6-C2s">
+                                <rect key="frame" x="304" y="361" width="103" height="30"/>
+                                <state key="normal" title="About The Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hg2-Uf-LIB" kind="show" id="D4T-Vw-VHt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0ot-v6-C2s" firstAttribute="top" secondItem="Yfj-qA-BCN" secondAttribute="bottom" constant="8" id="0Tl-B5-bVR"/>
                             <constraint firstAttribute="centerX" secondItem="Yfj-qA-BCN" secondAttribute="centerX" id="S9X-qR-Dmz"/>
                             <constraint firstItem="Yfj-qA-BCN" firstAttribute="top" secondItem="zld-2r-Gyq" secondAttribute="bottom" constant="8" id="WzF-qb-UHW"/>
+                            <constraint firstItem="0ot-v6-C2s" firstAttribute="centerX" secondItem="Yfj-qA-BCN" secondAttribute="centerX" id="YuP-PI-Ss0"/>
                             <constraint firstAttribute="centerX" secondItem="zld-2r-Gyq" secondAttribute="centerX" id="f12-gg-Bmz"/>
                             <constraint firstAttribute="centerY" secondItem="zld-2r-Gyq" secondAttribute="centerY" id="uTi-uC-Eal"/>
                         </constraints>
@@ -88,27 +99,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux0-Yv-Qw9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Question 1" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ux0-Yv-Qw9">
                                 <rect key="frame" x="258" y="72" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvq-2m-2nh">
-                                <rect key="frame" x="16" y="101" width="568" height="40"/>
-                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-bZ-Cb4" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                                <rect key="frame" x="16" y="235" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.050000000000000017" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-bZ-Cb4">
-                                <rect key="frame" x="16" y="245" width="568" height="40"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Da7-YD-Ix3">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Da7-YD-Ix3">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
                                     <barButtonItem enabled="NO" title="Prev" id="9kP-C3-Lkm">
@@ -130,39 +135,51 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXs-ve-jLt">
-                                <rect key="frame" x="16" y="197" width="568" height="40"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXs-ve-jLt" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                                <rect key="frame" x="16" y="197" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i97-PT-pOQ">
-                                <rect key="frame" x="16" y="149" width="568" height="40"/>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvq-2m-2nh" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                                <rect key="frame" x="16" y="103" width="568" height="30"/>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i97-PT-pOQ" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                                <rect key="frame" x="16" y="149" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.64313725490196083" green="0.85098039215686272" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="E5m-bZ-Cb4" firstAttribute="top" secondItem="dXs-ve-jLt" secondAttribute="bottom" constant="18" id="5Hl-5O-1WD"/>
                             <constraint firstItem="dXs-ve-jLt" firstAttribute="trailing" secondItem="2JH-qg-PsE" secondAttribute="trailingMargin" id="5ol-tJ-Dv2"/>
                             <constraint firstItem="Ux0-Yv-Qw9" firstAttribute="top" secondItem="LGS-fZ-McK" secondAttribute="bottom" constant="8" id="F1k-as-ebD"/>
                             <constraint firstItem="Da7-YD-Ix3" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" constant="-16" id="ITr-m5-hKh"/>
                             <constraint firstItem="dXs-ve-jLt" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="NNd-gs-ESZ"/>
                             <constraint firstItem="i97-PT-pOQ" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="Pr3-wT-hPJ"/>
                             <constraint firstItem="E5m-bZ-Cb4" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="SDu-tD-Wdh"/>
-                            <constraint firstItem="Gvq-2m-2nh" firstAttribute="top" secondItem="Ux0-Yv-Qw9" secondAttribute="bottom" constant="8" id="Tod-w9-R7L"/>
+                            <constraint firstItem="Gvq-2m-2nh" firstAttribute="top" secondItem="Ux0-Yv-Qw9" secondAttribute="bottom" constant="18" id="Tod-w9-R7L"/>
                             <constraint firstItem="Gvq-2m-2nh" firstAttribute="leading" secondItem="2JH-qg-PsE" secondAttribute="leadingMargin" id="aM1-hN-qHL"/>
+                            <constraint firstItem="dXs-ve-jLt" firstAttribute="top" secondItem="i97-PT-pOQ" secondAttribute="bottom" constant="18" id="cCF-oN-6er"/>
                             <constraint firstItem="WFI-cx-Qhs" firstAttribute="top" secondItem="Da7-YD-Ix3" secondAttribute="bottom" id="goj-jR-5G8"/>
                             <constraint firstItem="Gvq-2m-2nh" firstAttribute="trailing" secondItem="2JH-qg-PsE" secondAttribute="trailingMargin" id="jt7-kr-ecf"/>
                             <constraint firstItem="E5m-bZ-Cb4" firstAttribute="trailing" secondItem="2JH-qg-PsE" secondAttribute="trailingMargin" id="nTm-Nm-CyN"/>
+                            <constraint firstItem="i97-PT-pOQ" firstAttribute="top" secondItem="Gvq-2m-2nh" secondAttribute="bottom" constant="18" id="uIT-KE-brc"/>
                             <constraint firstItem="i97-PT-pOQ" firstAttribute="trailing" secondItem="2JH-qg-PsE" secondAttribute="trailingMargin" id="uTh-Hj-eHk"/>
                             <constraint firstAttribute="centerX" secondItem="Ux0-Yv-Qw9" secondAttribute="centerX" id="x8T-ew-tAv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Da7-YD-Ix3" secondAttribute="trailing" constant="-16" id="yva-8F-hc5"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="a1" destination="i97-PT-pOQ" id="d7e-1n-93o"/>
                         <outlet property="a2" destination="dXs-ve-jLt" id="Klq-YI-jA5"/>
@@ -177,6 +194,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8g-Wc-0iG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1665" y="321"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zoV-3g-bQH">
+            <objects>
+                <viewController id="hg2-Uf-LIB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UE8-lC-sX5"/>
+                        <viewControllerLayoutGuide type="bottom" id="XIY-k6-hIj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j4m-nH-ulM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pt8-mA-DMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665" y="1049"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uce-Et-mXB">
