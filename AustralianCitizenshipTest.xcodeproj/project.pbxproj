@@ -10,7 +10,6 @@
 		CF130E011AF4FF850025383C /* questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF130E001AF4FF850025383C /* questions.txt */; };
 		CF130E031AF62CAE0025383C /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF130E021AF62CAE0025383C /* PaddedLabel.swift */; };
 		CF721B321ACAE222001F48E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B311ACAE222001F48E9 /* AppDelegate.swift */; };
-		CF721B341ACAE222001F48E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B331ACAE222001F48E9 /* ViewController.swift */; };
 		CF721B371ACAE222001F48E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF721B351ACAE222001F48E9 /* Main.storyboard */; };
 		CF721B391ACAE222001F48E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF721B381ACAE222001F48E9 /* Images.xcassets */; };
 		CF721B3C1ACAE222001F48E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF721B3A1ACAE222001F48E9 /* LaunchScreen.xib */; };
@@ -37,7 +36,6 @@
 		CF721B2C1ACAE222001F48E9 /* AustralianCitizenshipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustralianCitizenshipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF721B301ACAE222001F48E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF721B311ACAE222001F48E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF721B331ACAE222001F48E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF721B361ACAE222001F48E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF721B381ACAE222001F48E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CF721B3B1ACAE222001F48E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 				CF721B311ACAE222001F48E9 /* AppDelegate.swift */,
 				CF721B511ACAE3F6001F48E9 /* QuestionsController.swift */,
 				CFD6964D1AF7089E00AE77F0 /* VideosViewController.swift */,
-				CF721B331ACAE222001F48E9 /* ViewController.swift */,
 				CF721B351ACAE222001F48E9 /* Main.storyboard */,
 				CF721B381ACAE222001F48E9 /* Images.xcassets */,
 				CF721B3A1ACAE222001F48E9 /* LaunchScreen.xib */,
@@ -231,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF721B341ACAE222001F48E9 /* ViewController.swift in Sources */,
 				CFF01EE81ACC0BAA001B2352 /* Question.swift in Sources */,
 				CF8D42641AF64CAA00F466F5 /* AboutTheTestViewController.swift in Sources */,
 				CFD6964E1AF7089E00AE77F0 /* VideosViewController.swift in Sources */,

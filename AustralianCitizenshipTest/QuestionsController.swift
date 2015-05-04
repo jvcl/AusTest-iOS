@@ -26,9 +26,8 @@ class QuestionsController: UIViewController {
     @IBOutlet weak var a3: UILabel!
     var questions: [Question] = []
     var finish = false
-    
-    
     var num = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,7 +58,6 @@ class QuestionsController: UIViewController {
         if (num > 0) {
             num--
             buttonNext.enabled = true
-            
         }
         if num == 0 {
             buttonPrev.enabled = false
@@ -73,30 +71,23 @@ class QuestionsController: UIViewController {
         println("finish")
         
         let alertController = UIAlertController(title: nil, message: "Finish?", preferredStyle: .Alert)
-        
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
-            // ...
+            // Do nothing
         }
         alertController.addAction(cancelAction)
         
         let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-            // ...
+            // Show score Dialog
             self.showScoreDialog()
             
         }
         alertController.addAction(OKAction)
-        
-        
-        
         self.presentViewController(alertController, animated: true) {
-            // ...
         }
-        
     }
     
     func showScoreDialog(){
         println("calculate Score")
-        
         finishButton.enabled = false
         a1.removeGestureRecognizer(a1Gesture)
         a2.removeGestureRecognizer(a2Gesture)
@@ -125,14 +116,12 @@ class QuestionsController: UIViewController {
         if num == 19 {
             buttonNext.enabled = false
         }
-        
-        
         label.text = "Question \(num+1)"
         loadQuestion(num)
     }
     
+    //Read questions from file and pick 20 random questions
     func getQuestions(){
-        
         var questionsFromFile = readFile()
         for var index = 0; index < 20; ++index {
             println(index)
@@ -145,8 +134,6 @@ class QuestionsController: UIViewController {
     func tappedView1 (){
         questions[num].choosen = 0
         changeLabelColor(a1)
-        
-        //UIApplication.sharedApplication().openURL(NSURL(string: "http://www.apple.com/")!)
     }
     
     func loadQuestion(index: Int) {
@@ -170,7 +157,7 @@ class QuestionsController: UIViewController {
             }
             changeLabelColor(tempLabel!)
         }
-        
+        //When user has finished show right/wrong answers
         if finish {
             if ((questions[index].choosen == -1) || (questions[index].choosen != questions[index].rightAnswer))  {
                 println("wrong")
@@ -217,10 +204,8 @@ class QuestionsController: UIViewController {
     }
     
     func calculateScore() -> Int{
-        println("Calculate")
-        
+        println("Calculate Score")
         var score = 0
-        
         for q in questions{
             if q.choosen != -1 && q.rightAnswer == q.choosen {
                 score++
@@ -229,7 +214,7 @@ class QuestionsController: UIViewController {
         println("Score \(score)")
         return score
     }
-    
+    //Read from file
     func readFile()->[NSString]{
         let path = NSBundle.mainBundle().pathForResource("questions", ofType: "txt")
         var text = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)!
@@ -239,7 +224,7 @@ class QuestionsController: UIViewController {
         
        // println(text)
     }
-    
+    //Shuffle List
     func shuffle<C: MutableCollectionType where C.Index == Int>(var list: C) -> C {
         let c = count(list)
         for i in 0..<(c - 1) {

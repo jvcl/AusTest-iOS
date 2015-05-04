@@ -14,40 +14,33 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     // Storyboard has been set up for you using this String.
     let cellReuseIdentifier = "MyCellReuseIdentifier"
     
-    // Choose some data to show in your table
-    
+    // Data with the videos urls
     let model = [
-        ["text" : "1. Introduction", "detail" : "https://www.youtube.com/watch?v=m2Lfg9ZIWGA"],
-        ["text" : "2. Australia and its people", "detail" : "https://www.youtube.com/watch?v=BkZdjRbTOO4"],
-        ["text" : "3. Australia's democratic beliefs, rights and liberties", "detail" : "https://www.youtube.com/watch?v=B-hdOsYBwao"],
-        ["text" : "4. Australia's democratic beliefs, rights and liberties (Con)", "detail": "https://www.youtube.com/watch?v=CzVuXALh9J4"],
-        ["text" : "5. Goverment and the law in Australia", "detail" : "https://www.youtube.com/watch?v=2bu3-vVqXns"],
-        ["text" : "6. Goverment and the law in Australia (Con)", "detail": "https://www.youtube.com/watch?v=Mk35dPXi30k"]
+        ["tittle" : "1. Introduction", "url" : "https://www.youtube.com/watch?v=m2Lfg9ZIWGA"],
+        ["tittle" : "2. Australia and its people", "url" : "https://www.youtube.com/watch?v=BkZdjRbTOO4"],
+        ["tittle" : "3. Australia's democratic beliefs, rights and liberties", "url" : "https://www.youtube.com/watch?v=B-hdOsYBwao"],
+        ["tittle" : "4. Australia's democratic beliefs, rights and liberties (Con)", "url": "https://www.youtube.com/watch?v=CzVuXALh9J4"],
+        ["tittle" : "5. Goverment and the law in Australia", "url" : "https://www.youtube.com/watch?v=2bu3-vVqXns"],
+        ["tittle" : "6. Goverment and the law in Australia (Con)", "url": "https://www.youtube.com/watch?v=Mk35dPXi30k"]
     ]
     
-    override func viewDidLoad() {
-    }
-    
+    //Number of rows
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.model.count;
         
     }
-    
+    //Cell at the specific row
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCellWithIdentifier(self.cellReuseIdentifier) as! UITableViewCell
-        
         let dictionary = self.model[indexPath.row]
-        
-        cell.textLabel?.text = dictionary["text"]
-        cell.detailTextLabel?.text = dictionary["detail"]
-        
+        cell.textLabel?.text = dictionary["tittle"]
         return cell
     }
     
-    
+    //Handle row selection and load video
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         let dictionary = self.model[indexPath.row]
-        var url  = NSURL(string: dictionary["detail"]!)
+        var url  = NSURL(string: dictionary["url"]!)
         if UIApplication.sharedApplication().canOpenURL(url!) == true  {
             UIApplication.sharedApplication().openURL(url!)
         }
