@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideosViewController: UIViewController, UITableViewDataSource {
+class VideosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // Use this string property as your reuse identifier,
     // Storyboard has been set up for you using this String.
@@ -25,8 +25,12 @@ class VideosViewController: UIViewController, UITableViewDataSource {
         ["text" : "6. Goverment and the law in Australia (Con)", "detail": "A note to follow So."]
     ]
     
+    override func viewDidLoad() {
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.model.count;
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -39,5 +43,9 @@ class VideosViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-
+    
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        println(indexPath.row)
+    }
 }

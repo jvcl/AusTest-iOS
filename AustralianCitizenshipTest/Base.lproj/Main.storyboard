@@ -214,6 +214,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Cc9-xU-Zaa" id="QQ5-eY-12z"/>
+                                    <outlet property="delegate" destination="Cc9-xU-Zaa" id="Z4F-mk-MXF"/>
                                 </connections>
                             </tableView>
                         </subviews>
