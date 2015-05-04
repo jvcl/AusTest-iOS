@@ -17,12 +17,12 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     // Choose some data to show in your table
     
     let model = [
-        ["text" : "1. Introduction", "detail" : "A deer. A female deer."],
-        ["text" : "2. Australia and its people", "detail" : "A drop of golden sun."],
-        ["text" : "3. Australia's democratic beliefs, rights and liberties", "detail" : "A name, I call myself."],
-        ["text" : "4. Australia's democratic beliefs, rights and liberties (Con)", "detail" : "A long long way to run."],
-        ["text" : "5. Goverment and the law in Australia", "detail" : "A needle pulling thread."],
-        ["text" : "6. Goverment and the law in Australia (Con)", "detail": "A note to follow So."]
+        ["text" : "1. Introduction", "detail" : "https://www.youtube.com/watch?v=m2Lfg9ZIWGA"],
+        ["text" : "2. Australia and its people", "detail" : "https://www.youtube.com/watch?v=BkZdjRbTOO4"],
+        ["text" : "3. Australia's democratic beliefs, rights and liberties", "detail" : "https://www.youtube.com/watch?v=B-hdOsYBwao"],
+        ["text" : "4. Australia's democratic beliefs, rights and liberties (Con)", "detail": "https://www.youtube.com/watch?v=CzVuXALh9J4"],
+        ["text" : "5. Goverment and the law in Australia", "detail" : "https://www.youtube.com/watch?v=2bu3-vVqXns"],
+        ["text" : "6. Goverment and the law in Australia (Con)", "detail": "https://www.youtube.com/watch?v=Mk35dPXi30k"]
     ]
     
     override func viewDidLoad() {
@@ -46,6 +46,10 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        println(indexPath.row)
+        let dictionary = self.model[indexPath.row]
+        var url  = NSURL(string: dictionary["detail"]!)
+        if UIApplication.sharedApplication().canOpenURL(url!) == true  {
+            UIApplication.sharedApplication().openURL(url!)
+        }
     }
 }
