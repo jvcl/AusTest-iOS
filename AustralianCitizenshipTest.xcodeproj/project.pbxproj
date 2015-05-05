@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CF130E011AF4FF850025383C /* questions.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF130E001AF4FF850025383C /* questions.txt */; };
 		CF130E031AF62CAE0025383C /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF130E021AF62CAE0025383C /* PaddedLabel.swift */; };
+		CF5C40C01AF888A50026EB3C /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C40BF1AF888A50026EB3C /* ScoreViewController.swift */; };
 		CF721B321ACAE222001F48E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF721B311ACAE222001F48E9 /* AppDelegate.swift */; };
 		CF721B371ACAE222001F48E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF721B351ACAE222001F48E9 /* Main.storyboard */; };
 		CF721B391ACAE222001F48E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF721B381ACAE222001F48E9 /* Images.xcassets */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		CF130E001AF4FF850025383C /* questions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = questions.txt; sourceTree = "<group>"; };
 		CF130E021AF62CAE0025383C /* PaddedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
+		CF5C40BF1AF888A50026EB3C /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		CF721B2C1ACAE222001F48E9 /* AustralianCitizenshipTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustralianCitizenshipTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF721B301ACAE222001F48E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF721B311ACAE222001F48E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				CF130E001AF4FF850025383C /* questions.txt */,
 				CF130E021AF62CAE0025383C /* PaddedLabel.swift */,
 				CF8D42631AF64CAA00F466F5 /* AboutTheTestViewController.swift */,
+				CF5C40BF1AF888A50026EB3C /* ScoreViewController.swift */,
 			);
 			path = AustralianCitizenshipTest;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5C40C01AF888A50026EB3C /* ScoreViewController.swift in Sources */,
 				CFF01EE81ACC0BAA001B2352 /* Question.swift in Sources */,
 				CF8D42641AF64CAA00F466F5 /* AboutTheTestViewController.swift in Sources */,
 				CFD6964E1AF7089E00AE77F0 /* VideosViewController.swift in Sources */,

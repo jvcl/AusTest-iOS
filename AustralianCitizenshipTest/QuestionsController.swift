@@ -95,15 +95,19 @@ class QuestionsController: UIViewController {
         
         self.finish = true
         var score = calculateScore()
-        let alertControllerScore = UIAlertController(title: "Score", message: "Score: \(score)", preferredStyle: .Alert)
-        let OKActionScore = UIAlertAction(title: "OK", style: .Default) { (action) in
+       // let alertControllerScore = UIAlertController(title: "Score", message: "Score: \(score)", preferredStyle: .Alert)
+       // let OKActionScore = UIAlertAction(title: "OK", style: .Default) { (action) in
             
             //Update UI
-            println("Update UI")
-        }
+       //     println("Update UI")
+       // }
         
-        alertControllerScore.addAction(OKActionScore)
-        self.presentViewController(alertControllerScore, animated: true, completion: nil)
+       // alertControllerScore.addAction(OKActionScore)
+        var scoreController: ScoreViewController
+        scoreController = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreController") as! ScoreViewController
+        
+        scoreController.score = score
+        self.presentViewController(scoreController, animated: true, completion: nil)
         
     }
    

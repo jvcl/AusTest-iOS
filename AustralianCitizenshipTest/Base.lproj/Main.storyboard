@@ -19,7 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zld-2r-Gyq">
                                 <rect key="frame" x="267" y="288" width="140" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Start Test">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -29,7 +29,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfj-qA-BCN">
                                 <rect key="frame" x="277" y="323" width="119" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Videos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -39,7 +39,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ot-v6-C2s">
                                 <rect key="frame" x="249" y="353" width="158" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="About The Test">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1001" y="321"/>
         </scene>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="oJd-qN-gmb">
             <objects>
-                <viewController id="MQv-57-zP2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreController" id="MQv-57-zP2" customClass="ScoreViewController" customModule="AustralianCitizenshipTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qgk-4R-B4i"/>
                         <viewControllerLayoutGuide type="bottom" id="hAj-9M-T8A"/>
@@ -75,8 +75,52 @@
                     <view key="view" contentMode="scaleToFill" id="L2k-EP-Otc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szw-yK-qP9">
+                                <rect key="frame" x="270" y="227" width="60" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU1-7y-MKg">
+                                <rect key="frame" x="276" y="251" width="47" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test Results" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9T-XS-6pE">
+                                <rect key="frame" x="244" y="195" width="112" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-uW-Eg3">
+                                <rect key="frame" x="228" y="282" width="145" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Review Answers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackButton:" destination="MQv-57-zP2" eventType="touchUpInside" id="nzL-8P-u0i"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kMf-uW-Eg3" firstAttribute="centerX" secondItem="FU1-7y-MKg" secondAttribute="centerX" constant="1.5" id="4cC-Sp-iLe"/>
+                            <constraint firstItem="FU1-7y-MKg" firstAttribute="top" secondItem="szw-yK-qP9" secondAttribute="bottom" constant="8" id="D3T-5Y-oqL"/>
+                            <constraint firstItem="FU1-7y-MKg" firstAttribute="centerX" secondItem="szw-yK-qP9" secondAttribute="centerX" constant="-0.5" id="Eh0-d3-hrc"/>
+                            <constraint firstItem="kMf-uW-Eg3" firstAttribute="top" secondItem="FU1-7y-MKg" secondAttribute="bottom" constant="8" id="RGg-4R-HNN"/>
+                            <constraint firstItem="u9T-XS-6pE" firstAttribute="centerX" secondItem="szw-yK-qP9" secondAttribute="centerX" constant="0.5" id="Y3v-py-Xxz"/>
+                            <constraint firstAttribute="centerX" secondItem="kMf-uW-Eg3" secondAttribute="centerX" id="c3E-me-3zy"/>
+                            <constraint firstItem="szw-yK-qP9" firstAttribute="top" secondItem="u9T-XS-6pE" secondAttribute="bottom" constant="8" id="dwt-bq-AD7"/>
+                            <constraint firstAttribute="centerY" secondItem="kMf-uW-Eg3" secondAttribute="centerY" id="eDB-wM-CSz"/>
+                            <constraint firstAttribute="centerX" secondItem="u9T-XS-6pE" secondAttribute="centerX" constant="-0.5" id="tJj-An-51o"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="porcentLabel" destination="FU1-7y-MKg" id="Icw-NY-1vU"/>
+                        <outlet property="scoreLabel" destination="szw-yK-qP9" id="82B-Dv-a16"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="for-CW-32c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,7 +413,7 @@ http://www.citizenship.gov.au/learn/cit_test/test_resource/_pdf/our-common-bond-
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWV-CD-Mka" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="-372"/>
+            <point key="canvasLocation" x="1001" y="-427"/>
         </scene>
     </scenes>
     <resources>
