@@ -16,12 +16,12 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     
     // Data with the videos urls
     let model = [
-        ["tittle" : "1. Introduction", "url" : "https://www.youtube.com/watch?v=m2Lfg9ZIWGA"],
-        ["tittle" : "2. Australia and its people", "url" : "https://www.youtube.com/watch?v=BkZdjRbTOO4"],
+        ["tittle" : "Introduction", "url" : "https://www.youtube.com/watch?v=m2Lfg9ZIWGA"],
+        ["tittle" : "Australia and its people", "url" : "https://www.youtube.com/watch?v=BkZdjRbTOO4"],
         ["tittle" : "3. Australia's democratic beliefs, rights and liberties", "url" : "https://www.youtube.com/watch?v=B-hdOsYBwao"],
-        ["tittle" : "4. Australia's democratic beliefs, rights and liberties (Con)", "url": "https://www.youtube.com/watch?v=CzVuXALh9J4"],
-        ["tittle" : "5. Goverment and the law in Australia", "url" : "https://www.youtube.com/watch?v=2bu3-vVqXns"],
-        ["tittle" : "6. Goverment and the law in Australia (Con)", "url": "https://www.youtube.com/watch?v=Mk35dPXi30k"]
+        ["tittle" : "Australia's democratic beliefs, rights and liberties (Con)", "url": "https://www.youtube.com/watch?v=CzVuXALh9J4"],
+        ["tittle" : "Goverment and the law in Australia", "url" : "https://www.youtube.com/watch?v=2bu3-vVqXns"],
+        ["tittle" : "Goverment and the law in Australia (Con)", "url": "https://www.youtube.com/watch?v=Mk35dPXi30k"]
     ]
     
     //Number of rows
@@ -33,7 +33,8 @@ class VideosViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCellWithIdentifier(self.cellReuseIdentifier) as! UITableViewCell
         let dictionary = self.model[indexPath.row]
-        cell.textLabel?.text = dictionary["tittle"]
+        cell.textLabel?.text = "Video \(indexPath.row+1)"
+        cell.detailTextLabel?.text = dictionary["tittle"]
         return cell
     }
     
