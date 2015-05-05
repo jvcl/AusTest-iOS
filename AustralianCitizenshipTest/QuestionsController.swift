@@ -107,8 +107,10 @@ class QuestionsController: UIViewController {
         scoreController = self.storyboard?.instantiateViewControllerWithIdentifier("ScoreController") as! ScoreViewController
         
         scoreController.score = score
-        self.presentViewController(scoreController, animated: true, completion: nil)
-        
+        self.presentViewController(scoreController, animated: true) { action in
+            self.loadQuestion(self.num)
+
+        }
     }
    
     @IBAction func button_next(sender: AnyObject) {

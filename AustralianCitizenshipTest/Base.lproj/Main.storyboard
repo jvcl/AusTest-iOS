@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zld-2r-Gyq">
-                                <rect key="frame" x="267" y="288" width="140" height="27"/>
+                                <rect key="frame" x="230" y="288" width="140" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Start Test">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfj-qA-BCN">
-                                <rect key="frame" x="277" y="323" width="119" height="30"/>
+                                <rect key="frame" x="241" y="323" width="119" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Videos">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,8 +37,11 @@
                                     <segue destination="Cc9-xU-Zaa" kind="show" id="UiR-ig-F1q"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="CNc-eA-q7C">
+                                <rect key="frame" x="180" y="152" width="240" height="128"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ot-v6-C2s">
-                                <rect key="frame" x="249" y="353" width="158" height="38"/>
+                                <rect key="frame" x="221" y="353" width="158" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="About The Test">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,12 +53,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0ot-v6-C2s" firstAttribute="top" secondItem="Yfj-qA-BCN" secondAttribute="bottom" constant="8" id="0Tl-B5-bVR"/>
-                            <constraint firstAttribute="centerX" secondItem="Yfj-qA-BCN" secondAttribute="centerX" id="S9X-qR-Dmz"/>
-                            <constraint firstItem="Yfj-qA-BCN" firstAttribute="top" secondItem="zld-2r-Gyq" secondAttribute="bottom" constant="8" id="WzF-qb-UHW"/>
-                            <constraint firstItem="0ot-v6-C2s" firstAttribute="centerX" secondItem="Yfj-qA-BCN" secondAttribute="centerX" id="YuP-PI-Ss0"/>
-                            <constraint firstAttribute="centerX" secondItem="zld-2r-Gyq" secondAttribute="centerX" id="f12-gg-Bmz"/>
-                            <constraint firstAttribute="centerY" secondItem="zld-2r-Gyq" secondAttribute="centerY" id="uTi-uC-Eal"/>
+                            <constraint firstAttribute="centerX" secondItem="Yfj-qA-BCN" secondAttribute="centerX" constant="-0.5" id="5hH-bK-hKv"/>
+                            <constraint firstAttribute="centerX" secondItem="0ot-v6-C2s" secondAttribute="centerX" id="PXE-MU-GcS"/>
+                            <constraint firstItem="0ot-v6-C2s" firstAttribute="top" secondItem="Yfj-qA-BCN" secondAttribute="bottom" constant="2" id="WZ1-qa-Cds"/>
+                            <constraint firstAttribute="centerX" secondItem="CNc-eA-q7C" secondAttribute="centerX" id="Y3H-HK-8xr"/>
+                            <constraint firstItem="Yfj-qA-BCN" firstAttribute="top" secondItem="zld-2r-Gyq" secondAttribute="bottom" constant="2" id="efn-mg-9XN"/>
+                            <constraint firstAttribute="centerX" secondItem="zld-2r-Gyq" secondAttribute="centerX" id="mjH-CH-woH"/>
+                            <constraint firstAttribute="centerY" secondItem="Yfj-qA-BCN" secondAttribute="centerY" constant="-38" id="rSa-He-gYJ"/>
+                            <constraint firstItem="zld-2r-Gyq" firstAttribute="top" secondItem="CNc-eA-q7C" secondAttribute="bottom" constant="20" id="smK-Cl-xY7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="AusTest" id="J5F-WS-VRM"/>
@@ -104,7 +109,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kMf-uW-Eg3" firstAttribute="centerX" secondItem="FU1-7y-MKg" secondAttribute="centerX" constant="1.5" id="4cC-Sp-iLe"/>
                             <constraint firstItem="FU1-7y-MKg" firstAttribute="top" secondItem="szw-yK-qP9" secondAttribute="bottom" constant="8" id="D3T-5Y-oqL"/>
@@ -258,7 +263,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-HL-BTV">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-HL-BTV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -295,7 +300,6 @@
                         <constraints>
                             <constraint firstItem="JdX-HL-BTV" firstAttribute="leading" secondItem="HcY-Lm-6tC" secondAttribute="leadingMargin" constant="-16" id="GuC-1O-q46"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JdX-HL-BTV" secondAttribute="trailing" constant="-16" id="bjG-XX-uAV"/>
-                            <constraint firstItem="JdX-HL-BTV" firstAttribute="top" secondItem="HcY-Lm-6tC" secondAttribute="topMargin" constant="20" id="fCW-aD-tYD"/>
                             <constraint firstItem="czU-rj-quJ" firstAttribute="top" secondItem="JdX-HL-BTV" secondAttribute="bottom" id="qup-Bl-ETr"/>
                         </constraints>
                     </view>
@@ -417,6 +421,7 @@ http://www.citizenship.gov.au/learn/cit_test/test_resource/_pdf/our-common-bond-
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="125" height="125"/>
         <image name="right" width="64" height="50"/>
         <image name="wrong" width="64" height="64"/>
     </resources>
