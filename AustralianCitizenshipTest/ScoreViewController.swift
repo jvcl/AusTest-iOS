@@ -19,7 +19,7 @@ class ScoreViewController: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         var porcent = (Double(score)/20.0) * 100.0
-        porcentLabel.text = "\(Int(porcent)) Porcent"
+        porcentLabel.text = "\(Int(porcent)) %"
         scoreLabel.text = "Score: \(score)"
     }
     

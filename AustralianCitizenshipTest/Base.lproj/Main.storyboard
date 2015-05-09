@@ -8,7 +8,7 @@
         <!--AusTest-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AustralianCitizenshipTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AusTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -72,7 +72,7 @@
         <!--Score View Controller-->
         <scene sceneID="oJd-qN-gmb">
             <objects>
-                <viewController storyboardIdentifier="ScoreController" id="MQv-57-zP2" customClass="ScoreViewController" customModule="AustralianCitizenshipTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreController" id="MQv-57-zP2" customClass="ScoreViewController" customModule="AusTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qgk-4R-B4i"/>
                         <viewControllerLayoutGuide type="bottom" id="hAj-9M-T8A"/>
@@ -84,13 +84,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Score: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szw-yK-qP9">
                                 <rect key="frame" x="270" y="227" width="60" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU1-7y-MKg">
                                 <rect key="frame" x="276" y="251" width="47" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Test Results" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9T-XS-6pE">
@@ -134,7 +134,7 @@
         <!--Questions Controller-->
         <scene sceneID="zsJ-3C-Ayb">
             <objects>
-                <viewController id="lrt-nh-yGD" customClass="QuestionsController" customModule="AustralianCitizenshipTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lrt-nh-yGD" customClass="QuestionsController" customModule="AusTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LGS-fZ-McK"/>
                         <viewControllerLayoutGuide type="bottom" id="WFI-cx-Qhs"/>
@@ -149,7 +149,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-bZ-Cb4" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5m-bZ-Cb4" customClass="PaddedLabel" customModule="AusTest" customModuleProvider="target">
                                 <rect key="frame" x="16" y="232" width="568" height="22"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.050000000000000017" y="0.0" width="1" height="1"/>
@@ -179,23 +179,23 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXs-ve-jLt" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXs-ve-jLt" customClass="PaddedLabel" customModule="AusTest" customModuleProvider="target">
                                 <rect key="frame" x="16" y="192" width="568" height="22"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvq-2m-2nh" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvq-2m-2nh" customClass="PaddedLabel" customModule="AusTest" customModuleProvider="target">
                                 <rect key="frame" x="16" y="111" width="568" height="23"/>
-                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.68235294117647061" green="0.83529411764705885" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i97-PT-pOQ" customClass="PaddedLabel" customModule="AustralianCitizenshipTest" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i97-PT-pOQ" customClass="PaddedLabel" customModule="AusTest" customModuleProvider="target">
                                 <rect key="frame" x="16" y="152" width="568" height="22"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -254,7 +254,7 @@
         <!--Videos View Controller-->
         <scene sceneID="eZl-1Y-cc1">
             <objects>
-                <viewController id="Cc9-xU-Zaa" customClass="VideosViewController" customModule="AustralianCitizenshipTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cc9-xU-Zaa" customClass="VideosViewController" customModule="AusTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VuZ-m2-Bgy"/>
                         <viewControllerLayoutGuide type="bottom" id="czU-rj-quJ"/>
@@ -263,8 +263,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-HL-BTV">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JdX-HL-BTV">
+                                <rect key="frame" x="0.0" y="8" width="600" height="592"/>
                                 <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCellReuseIdentifier" textLabel="wp5-9Y-tQv" detailTextLabel="fYI-ux-gFB" style="IBUITableViewCellStyleSubtitle" id="P4n-Ob-UIL">
@@ -281,7 +281,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fYI-ux-gFB">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -298,9 +298,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JdX-HL-BTV" firstAttribute="leading" secondItem="HcY-Lm-6tC" secondAttribute="leadingMargin" constant="-16" id="GuC-1O-q46"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JdX-HL-BTV" secondAttribute="trailing" constant="-16" id="bjG-XX-uAV"/>
-                            <constraint firstItem="czU-rj-quJ" firstAttribute="top" secondItem="JdX-HL-BTV" secondAttribute="bottom" id="qup-Bl-ETr"/>
+                            <constraint firstItem="czU-rj-quJ" firstAttribute="top" secondItem="JdX-HL-BTV" secondAttribute="bottom" id="55Y-6Q-3CU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JdX-HL-BTV" secondAttribute="trailing" constant="-16" id="Alu-zU-U7q"/>
+                            <constraint firstItem="JdX-HL-BTV" firstAttribute="top" secondItem="HcY-Lm-6tC" secondAttribute="topMargin" constant="8" id="a7y-a6-gm7"/>
+                            <constraint firstItem="JdX-HL-BTV" firstAttribute="leading" secondItem="HcY-Lm-6tC" secondAttribute="leadingMargin" constant="-16" id="bR4-gw-HTu"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -320,8 +321,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-d9-cgC">
-                                <rect key="frame" x="16" y="20" width="568" height="522"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2F-d9-cgC">
+                                <rect key="frame" x="145" y="142" width="294" height="468"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Australian Australian Citizenship">
                                         <attributes>
@@ -390,10 +391,10 @@ http://www.citizenship.gov.au/learn/cit_test/test_resource/_pdf/our-common-bond-
                         </subviews>
                         <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U2F-d9-cgC" firstAttribute="top" secondItem="UE8-lC-sX5" secondAttribute="bottom" constant="-44" id="A6h-jF-38V"/>
-                            <constraint firstItem="U2F-d9-cgC" firstAttribute="trailing" secondItem="j4m-nH-ulM" secondAttribute="trailingMargin" id="BHO-F6-8wZ"/>
-                            <constraint firstItem="U2F-d9-cgC" firstAttribute="leading" secondItem="j4m-nH-ulM" secondAttribute="leadingMargin" id="bEr-IY-Wwp"/>
-                            <constraint firstItem="XIY-k6-hIj" firstAttribute="top" secondItem="U2F-d9-cgC" secondAttribute="bottom" constant="58" id="ulZ-Qd-oQJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U2F-d9-cgC" secondAttribute="trailing" id="7KR-ms-jz2"/>
+                            <constraint firstItem="U2F-d9-cgC" firstAttribute="top" secondItem="UE8-lC-sX5" secondAttribute="bottom" constant="-50" id="KYs-Ls-14Z"/>
+                            <constraint firstItem="U2F-d9-cgC" firstAttribute="leading" secondItem="j4m-nH-ulM" secondAttribute="leadingMargin" id="XXH-Gf-vtg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="U2F-d9-cgC" secondAttribute="bottom" id="txK-hN-jcv"/>
                         </constraints>
                     </view>
                 </viewController>
