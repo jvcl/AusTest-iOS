@@ -68,7 +68,7 @@ class QuestionsController: UIViewController {
     }
     
     @IBAction func button_finish(sender: AnyObject) {
-        println("finish")
+        //println("finish")
         
         let alertController = UIAlertController(title: nil, message: "Finish?", preferredStyle: .Alert)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
@@ -87,7 +87,7 @@ class QuestionsController: UIViewController {
     }
     
     func showScoreDialog(){
-        println("calculate Score")
+        //println("calculate Score")
         finishButton.enabled = false
         a1.removeGestureRecognizer(a1Gesture)
         a2.removeGestureRecognizer(a2Gesture)
@@ -130,7 +130,7 @@ class QuestionsController: UIViewController {
     func getQuestions(){
         var questionsFromFile = readFile()
         for var index = 0; index < 20; ++index {
-            println(index)
+            //println(index)
             var question = questionsFromFile[index].componentsSeparatedByString("///")
             var q = Question(question: question[0] as! String, answer1: question[1] as! String, answer2: question[2] as! String, answer3: question[3] as! String)
             questions.append(q)
@@ -166,7 +166,7 @@ class QuestionsController: UIViewController {
         //When user has finished show right/wrong answers
         if finish {
             if ((questions[index].choosen == -1) || (questions[index].choosen != questions[index].rightAnswer))  {
-                println("wrong")
+               // println("wrong")
                 rightImage.hidden = true
                 wrongImage.hidden = false
 
@@ -183,7 +183,7 @@ class QuestionsController: UIViewController {
             
             }else{
             
-            println("right")
+            //println("right")
                 rightImage.hidden = false
                 wrongImage.hidden = true
             }
@@ -210,14 +210,14 @@ class QuestionsController: UIViewController {
     }
     
     func calculateScore() -> Int{
-        println("Calculate Score")
+        //println("Calculate Score")
         var score = 0
         for q in questions{
             if q.choosen != -1 && q.rightAnswer == q.choosen {
                 score++
             }
         }
-        println("Score \(score)")
+       // println("Score \(score)")
         return score
     }
     //Read from file

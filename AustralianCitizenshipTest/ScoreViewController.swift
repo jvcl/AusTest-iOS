@@ -15,7 +15,7 @@ class ScoreViewController: UIViewController {
     var score = 0
     
     override func viewDidLoad() {
-        println("Load from Score")
+        //println("Load from Score")
     }
     override func viewWillAppear(animated: Bool) {
         var porcent = (Double(score)/20.0) * 100.0
